@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+    ViewData["Title"] = "FrontPage";
+}
+
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -9,6 +14,7 @@
 <body>
     <p>
     <div class="text-center">
+        <h3>@ViewData["Message"]</h3>
             @ViewBag.Repeating
     </div>
     </p>

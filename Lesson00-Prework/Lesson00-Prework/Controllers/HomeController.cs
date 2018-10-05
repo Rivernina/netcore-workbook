@@ -10,11 +10,9 @@ namespace Lesson00_Prework.Controllers
 {
     public class HomeController : Controller
     {
-        public ViewResult Index()
-        {
-            string result = new string('N', 5);
-            ViewBag.Repeating = result;
-            return View("FrontPage");
+        public IActionResult Index()
+        {   
+            return View();
         }
 
         public IActionResult About()
@@ -28,6 +26,14 @@ namespace Lesson00_Prework.Controllers
         {
             ViewData["Message"] = "Your contact page.";
 
+            return View();
+        }
+
+        public IActionResult FrontPage()
+        {
+            ViewData["Message"] = "Assignment";
+            string result = new string('N', 5);
+            ViewBag.Repeating = result;
             return View();
         }
 
