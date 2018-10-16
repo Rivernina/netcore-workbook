@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>ToDoApp</RootNamespace>
+    <AssemblyName>ToDoApp</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

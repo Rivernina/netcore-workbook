@@ -1,3 +1,14 @@
-﻿@{
-    Layout = "_Layout";
-}
+﻿@*@{
+        Layout = "_Layout";
+    }*@
+    <div>
+        @if (DateTime.Now.Minute % 2 == 0)
+        {
+            Layout = "_MyLayout";
+        }
+        else
+        {
+            Layout = "_Layout";
+
+        }
+    </div>
