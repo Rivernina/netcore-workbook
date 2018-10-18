@@ -1,0 +1,10 @@
+﻿@using StringUtilities
+@model ToDoApp.Models.CardViewModel
+
+<div class="col-md-@Model.Width">
+    <h2 title="@Model.Title">@Model.Title.Truncate(20)</h2>
+    <ul>
+        <li title="@Model.Summary">@Model.Summary.Truncate(20)</li>
+        <li>@Model.ActionDescription | <a href="@Model.ActionLink">View</a></li>
+    </ul>
+</div>

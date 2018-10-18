@@ -1,0 +1,10 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Greeting";
+}
+
+<h2>Greeting</h2>
+
+<p>@ViewBag.EnglishGreeting World (using @@ViewBag)</p>
+<p>@ViewData["SpanishGreeting"] World (using @@ViewData)</p>
+<p>@Model World (using @@Model)</p>

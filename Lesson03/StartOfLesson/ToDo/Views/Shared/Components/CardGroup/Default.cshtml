@@ -1,0 +1,8 @@
+﻿@model IEnumerable<ToDoApp.Models.CardViewModel>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <vc:card model="item" ></vc:card>
+    }
+</div>
