@@ -1,0 +1,98 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ToDo</title>
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        background-color: blueviolet;
+        padding: 20px;
+        text-align: center;
+        font-size: 10px;
+        color: whitesmoke;
+    }
+
+    nav {
+        float: left; 
+        width: 30%;
+        height: 400px;
+        background: white;
+        padding: 20px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    article {
+        position: center;
+        padding-left: 10px;
+        width: 70%;
+        height: 200px;
+    }
+
+    section:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    footer {
+        background-color: blueviolet;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+    }
+    </style>
+    </head>
+<body>
+    <header>
+        <h2>
+            Lesson00.0 - Homework
+        </h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+        @RenderBody()
+    </section>
+
+    <div class="container body-content">
+        <hr />
+        <footer>
+            <p>&copy; 2018 - Lesson00.0 - Homework</p>
+        </footer>
+    </div>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+
+
+
+
